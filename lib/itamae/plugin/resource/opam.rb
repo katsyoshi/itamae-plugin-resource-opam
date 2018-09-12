@@ -68,10 +68,11 @@ module Itamae
           cmd = [*Array(attributes.opam.binary)]
           case @current_action
           when :install
-            cmd << 'install -y'
+            cmd << 'install'
           when :uninstall
-            cmd << 'uninstall -y'
+            cmd << 'uninstall'
           end
+          cmd << '-y'
 
           cmd << attributes.package_name if attributes.package_name
           if @current_action != :switch && attributes.version
