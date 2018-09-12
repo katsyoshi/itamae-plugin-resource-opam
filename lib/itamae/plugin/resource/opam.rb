@@ -56,7 +56,7 @@ module Itamae
 
         def installed_opams
           opams = []
-          runcommand([*Array(attributes.opam_binary), 'list']).stdout.each_line do |line|
+          run_command([*Array(attributes.opam_binary), 'list']).stdout.each_line do |line|
             name, version, *_descriptions = line.split(/\s+/)
             opams << {name: name, version: version}
           end
