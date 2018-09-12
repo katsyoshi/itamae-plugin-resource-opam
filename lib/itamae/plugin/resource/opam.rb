@@ -69,17 +69,10 @@ module Itamae
           case @current_action
           when :install
             cmd << 'install -y'
-          when :switch
-            cmd << 'switch'
-            cmd << vesion
           when :uninstall
             cmd << 'uninstall -y'
-          when :update
-            cmd << 'update'
-          when :upgrade
-            cmd << 'upgrade -y'
           end
-          cmd << attributes.options if attributes.options
+
           cmd << attributes.package_name if attributes.package_name
           if @current_action != :switch && attributes.version
             cmd[-1] = "#{attributes.package_name}.#{attributes.vresion}"
