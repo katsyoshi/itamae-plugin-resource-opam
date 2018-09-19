@@ -76,7 +76,7 @@ module Itamae
 
           cmd << attributes.package_name if attributes.package_name
           if @current_action != :switch && attributes.version
-            cmd[-1] = "#{attributes.package_name}.#{attributes.vresion}"
+            cmd[-1] = "#{attributes.package_name}.#{attributes.version}"
           end
           cmd
         end
