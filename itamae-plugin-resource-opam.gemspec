@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["MATSUMOTO, Katsuyoshi"]
   spec.email         = ["github@katsyoshi.org"]
 
-  spec.summary       = %q{Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{itamae plugin for OPAM}
+  spec.description   = %q{itamae plugin for OPAM}
   spec.homepage      = "https://github.com/katsyoshi/itamae-plugin-resource-opam"
 
   # Specify which files should be added to the gem when it is released.
