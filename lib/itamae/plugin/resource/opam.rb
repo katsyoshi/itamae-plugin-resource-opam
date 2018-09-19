@@ -65,7 +65,7 @@ module Itamae
         end
 
         def build_aciotn_opam_command
-          cmd = [*Array(attributes.opam.binary)]
+          cmd = [*Array(attributes.opam_binary)]
           case @current_action
           when :install
             cmd << 'install'
