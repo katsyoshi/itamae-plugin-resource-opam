@@ -1,7 +1,5 @@
 require "itamae/plugin/resource/opam"
 
-opam 'coq'
-
 opam 'coq' do
-  action :uninstall
+  version '8.8.0'
 end
