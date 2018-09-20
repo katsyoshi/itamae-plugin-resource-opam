@@ -28,7 +28,7 @@ require 'itamae/plugin/resource/opam'
 
 opam "coq" do
   opam_binary "/usr/local/bin/opam"
-  version "4.1"
+  version "8.8.0"
 end
 ```
 
